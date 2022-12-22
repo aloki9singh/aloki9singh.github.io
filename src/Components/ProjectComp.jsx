@@ -5,6 +5,7 @@ import Myglamm from "../Pngs/myglamm.png";
 import Shephora from "../Pngs/shephora.png";
 import Github from "../Pngs/github.png";
 import Myntra from "../Pngs/myntra.png";
+import Portfolio from "../Pngs/Portfolio.png";
 // className="opacity-0 group-hover:opacity-100 "
 const ProjectContainer = () => {
   return (
@@ -33,7 +34,119 @@ const ProjectContainer = () => {
           
         <hr class="my-8 border-gray-200 dark:border-gray-700"/> */}
 
-            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-2">
+              <div className="shadow-md shadow-[#040c16]  hover:scale-110 duration-500 p-5 rounded">
+                <img
+                  class="object-cover object-center w-full h-64 rounded-lg lg:h-50"
+                  src={Myglamm}
+                  alt=""
+                />
+
+                <div class="mt-5">
+                  <span class="text-blue-500 uppercase">MyGlamm</span>
+
+                  <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
+                    A clone of MyGlamm website to buy Cosmetic Products based on
+                    beauty products. This Project was build by 5 members in 5
+                    days .(Group)
+                  </h1>
+
+                  <p class="mt-2 text-gray-500 dark:text-gray-400">
+                    <b className="text-blue-400">Tech Stack : </b>HTML | CSS |
+                    JAVASCRIPT | Heroku API.
+                  </p>
+                  {/* "https://bucolic-brioche-1a6175.netlify.app/" */}
+                  <div class="flex items-center justify-between mt-4">
+                    <a
+                      href="https://bucolic-brioche-1a6175.netlify.app/"
+                      class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
+                    >
+                      <button>
+                        <img
+                          className="w-10 mx-auto"
+                          src="https://cdn.iconscout.com/icon/free/png-256/netlify-3628945-3030170.png"
+                          alt="Tailwind Icon"
+                        />
+                        <p class="text-sm text-gray-500 dark:text-gray-400">
+                          Demo
+                        </p>
+                      </button>
+                    </a>
+                    <a
+                      href="https://github.com/kapil-khursade/incandescent-yarn-8212"
+                      class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
+                    >
+                      <button>
+                        <img
+                          className="w-10 mx-auto"
+                          src={Github}
+                          alt="Tailwind Icon"
+                        />
+                        <p class="text-sm text-gray-500 dark:text-gray-400">
+                          Github
+                        </p>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              {/* //3rd */}
+
+              <div className="shadow-md shadow-[#040c16]  hover:scale-110 duration-500 p-5 rounded">
+                <img
+                  class="object-cover object-center w-full h-64 rounded-lg lg:h-50"
+                  src={Myntra}
+                  alt="MyntShop"
+                />
+
+                <div class="mt-5">
+                  <span class="text-blue-500 uppercase">MyntShop</span>
+
+                  <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
+                    "MyntShop" a clone of Myntra website to buy various dressing
+                    and beauty Products. This Project was build by 5 members in 5
+                    days (Group)
+                  </h1>
+
+                  <p class="mt-2 text-gray-500 dark:text-gray-400">
+                    <b className="text-blue-400">Tech Stack : </b>
+                    React | Chakra UI | Vercel API | MaterialUI | CSS |Redux .
+                  </p>
+                  {/* "https://bucolic-brioche-1a6175.netlify.app/" */}
+                  <div class="flex items-center justify-between mt-4">
+                    <a
+                      href="https://myntra-gilt.vercel.app/"
+                      class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
+                    >
+                      <button>
+                        <img
+                          className="w-10 mx-auto"
+                          src="https://cdn.iconscout.com/icon/free/png-256/netlify-3628945-3030170.png"
+                          alt="Tailwind Icon"
+                        />
+                        <p class="text-sm text-gray-500 dark:text-gray-400">
+                          Demo
+                        </p>
+                      </button>
+                    </a>
+                    <a
+                      href="https://github.com/harshau9/eager-grain-3783"
+                      class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
+                    >
+                      <button>
+                        <img
+                          className="w-10 mx-auto"
+                          src={Github}
+                          alt="Tailwind Icon"
+                        />
+                        <p class="text-sm text-gray-500 dark:text-gray-400">
+                          Github
+                        </p>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
               <div className="shadow-md shadow-[#040c16]  hover:scale-110 duration-500 p-5 rounded">
                 <img
                   class="object-cover object-center w-full h-64 rounded-lg lg:h-50"
@@ -45,7 +158,9 @@ const ProjectContainer = () => {
                   <span class="text-blue-500 uppercase">sephora</span>
 
                   <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
-                    A clone of Shephora website to buy various  Cosmetic Beauty Products . (Individual)
+                    A clone of Shephora website to buy various Cosmetic Beauty
+                    Products. This Project was build in 5 days(Individual)
+ 
                   </h1>
 
                   <p class="mt-2 text-gray-500 dark:text-gray-400">
@@ -91,25 +206,27 @@ const ProjectContainer = () => {
               <div className="shadow-md shadow-[#040c16]  hover:scale-110 duration-500 p-5 rounded">
                 <img
                   class="object-cover object-center w-full h-64 rounded-lg lg:h-50"
-                  src={Myglamm}
+                  src={Portfolio}
                   alt=""
                 />
 
                 <div class="mt-5">
-                  <span class="text-blue-500 uppercase">MyGlamm</span>
+                  <span class="text-blue-500 uppercase">Portfolio</span>
 
                   <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
-                    A clone of MyGlamm website to buy Cosmetic Products.(Group)
+                    A self representing place to know more about me , my
+                    projects and respective details. This Project was build in 4
+                    days(Individual)
                   </h1>
 
                   <p class="mt-2 text-gray-500 dark:text-gray-400">
                     <b className="text-blue-400">Tech Stack : </b>HTML | CSS |
-                    JAVASCRIPT | Heroku API.
+                    JAVASCRIPT | Tailwind.
                   </p>
                   {/* "https://bucolic-brioche-1a6175.netlify.app/" */}
                   <div class="flex items-center justify-between mt-4">
                     <a
-                      href="https://bucolic-brioche-1a6175.netlify.app/"
+                      href="https://aloki9singh.github.io/"
                       class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
                     >
                       <button>
@@ -124,61 +241,7 @@ const ProjectContainer = () => {
                       </button>
                     </a>
                     <a
-                      href="https://github.com/kapil-khursade/incandescent-yarn-8212"
-                      class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
-                    >
-                      <button>
-                        <img
-                          className="w-10 mx-auto"
-                          src={Github}
-                          alt="Tailwind Icon"
-                        />
-                        <p class="text-sm text-gray-500 dark:text-gray-400">
-                          Github
-                        </p>
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="shadow-md shadow-[#040c16]  hover:scale-110 duration-500 p-5 rounded">
-                <img
-                  class="object-cover object-center w-full h-64 rounded-lg lg:h-50"
-                  src={Myntra}
-                  alt="MyntShop"
-                />
-
-                <div class="mt-5">
-                  <span class="text-blue-500 uppercase">MyntShop</span>
-
-                  <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
-                  "MyntShop" a clone of Myntra website  to buy various dressing and beauty Products. (Group)
-                  </h1>
-
-                  <p class="mt-2 text-gray-500 dark:text-gray-400">
-                    <b className="text-blue-400">Tech Stack : </b>
-                    React | Chakra
-                    UI | Vercel API | MaterialUI | CSS |Redux .
-                  </p>
-                  {/* "https://bucolic-brioche-1a6175.netlify.app/" */}
-                  <div class="flex items-center justify-between mt-4">
-                    <a
-                      href="https://myntra-gilt.vercel.app/"
-                      class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
-                    >
-                      <button>
-                        <img
-                          className="w-10 mx-auto"
-                          src="https://cdn.iconscout.com/icon/free/png-256/netlify-3628945-3030170.png"
-                          alt="Tailwind Icon"
-                        />
-                        <p class="text-sm text-gray-500 dark:text-gray-400">
-                          Demo
-                        </p>
-                      </button>
-                    </a>
-                    <a
-                      href="https://github.com/harshau9/eager-grain-3783"
+                      href="https://github.com/aloki9singh/aloki9singh.github.io"
                       class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
                     >
                       <button>
