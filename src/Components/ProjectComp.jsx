@@ -265,7 +265,7 @@ const ProjectContainer = () => {
                     <a
                       onClick={() =>
                         window.open(
-                          "https://github.com/aloki9singh/aloki9singh.github.io"
+                          "https://github.com/aloki9singh/aloki9singh.github.io/tree/master"
                         )
                       }
                       class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
