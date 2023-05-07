@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.7bbed253.css",
-    "main.js": "/static/js/main.c1db5989.js",
+    "main.js": "/static/js/main.90ead4c4.js",
     "static/media/myntra.png": "/static/media/myntra.f83d7e78113584f5b872.png",
     "static/media/shephora.png": "/static/media/shephora.6e6605e6b2d63a87d48d.png",
     "static/media/myglamm.png": "/static/media/myglamm.f7d4a138af64a8751a8c.png",
-    "static/media/Alok-Singh-Resume.pdf": "/static/media/Alok-Singh-Resume.214e43eb720092b61211.pdf",
+    "static/media/Alok-Singh-Resume.pdf": "/static/media/Alok-Singh-Resume.7ef355c9c8bc7d5bd52d.pdf",
     "static/media/prof1.JPG": "/static/media/prof1.8f1cd550e1b1d8ff1ca1.JPG",
     "static/media/Portfolio.png": "/static/media/Portfolio.3b5cc17e2cd5a47e53f4.png",
     "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
@@ -19,10 +19,10 @@
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
     "main.7bbed253.css.map": "/static/css/main.7bbed253.css.map",
-    "main.c1db5989.js.map": "/static/js/main.c1db5989.js.map"
+    "main.90ead4c4.js.map": "/static/js/main.90ead4c4.js.map"
   },
   "entrypoints": [
     "static/css/main.7bbed253.css",
-    "static/js/main.c1db5989.js"
+    "static/js/main.90ead4c4.js"
   ]
 }
