@@ -16,14 +16,17 @@ export const GitStats = () => {
             </p>
           </div>
           <div className="w-full grid grid-cols-1 sm:grid-cols-1 gap-5 text-center py-8">
-            <div className="shadow-md shadow-[#040c16]  hover:scale-110 duration-500 ">
+            <div
+             
+              className="react-activity-calendar shadow-md shadow-[#040c16]   hover:scale-110 duration-500 overflow-hidden text-ellipsis"
+            >
               <GitHubCalendar
                 username="aloki9singh"
                 // transformData={selectLastHalfYear}
                 blockSize={20}
                 fontSize={20}
               >
-                <ReactTooltip delayShow={20}/>
+                <ReactTooltip delayShow={20} />
               </GitHubCalendar>
 
               <p className="my-4">Git Calendar</p>
@@ -32,8 +35,9 @@ export const GitStats = () => {
             <div className=" shadow-md shadow-[#040c16]  hover:scale-110 duration-500 ">
               <div className="flex justify-center">
                 <img
-                  src="https://streak-stats.demolab.com?user=aloki9singh&theme=gruvbox_duo&hide_border=true&date_format=j%20M%5B%20Y%5D&mode=weekly"
-                  alt=""
+                  id="github-streak-stats"
+                  src="https://github-readme-streak-stats.herokuapp.com?user=aloki9singh&theme=gruvbox-duo&hide_border=true&date_format=j%20M%5B%20Y%5D&mode=weekly"
+                  alt="alok_streak"
                 />
               </div>
               <p className="my-4">Git Streak</p>
@@ -41,6 +45,7 @@ export const GitStats = () => {
             <div className=" shadow-md shadow-[#040c16]  hover:scale-110 duration-500 ">
               <div className="flex justify-center">
                 <img
+                  id="github-top-langs"
                   align="center"
                   src="https://github-readme-stats.vercel.app/api/top-langs?username=aloki9singh&show_icons=true&locale=en&layout=compact"
                   alt="aloki9singh"
@@ -51,6 +56,7 @@ export const GitStats = () => {
             <div className=" shadow-md shadow-[#040c16]  hover:scale-110 duration-500 ">
               <div className="flex justify-center">
                 <img
+                  id="github-stats-card"
                   align="center"
                   src="https://github-readme-stats.vercel.app/api?username=aloki9singh&show_icons=true&locale=en"
                   alt="aloki9singh"

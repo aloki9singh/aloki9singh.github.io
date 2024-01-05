@@ -20,22 +20,14 @@ const ProjectContainer = () => {
           </p>
           <p className="py-6"> Check out some of my recent work</p>
         </div>
-        <section class="bg-white dark:bg-gray-900">
-          <div class="container px-6 py-10 mx-auto">
-            {/* <div class="flex items-center justify-between">
-            <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">recent posts </h1>
-
-            <button class="focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600 transition-colors duration-300 transform dark:text-gray-400 hover:text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-            </button>
-        </div>
-          
-        <hr class="my-8 border-gray-200 dark:border-gray-700"/> */}
-
-            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-2">
-              <div className="shadow-md shadow-[#040c16]  hover:scale-110 duration-500 p-5 rounded">
+        <section class="bg-[#0a192f] dark:bg-gray-900">
+          <div class=" container px-6 py-10 mx-auto  bg-[#0a192f]">
+            <div
+              id="projects"
+              class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-2  bg-[#0a192f]"
+            >
+              {/* //1 */}
+              <div className="project-card shadow-md shadow-[#040c16]  hover:scale-110 duration-500 p-5 rounded  bg-[#0a192f] ">
                 <img
                   class="object-cover object-center w-full h-64 rounded-lg lg:h-50"
                   src={Myglamm}
@@ -43,15 +35,17 @@ const ProjectContainer = () => {
                 />
 
                 <div class="mt-5">
-                  <span class="text-blue-500 uppercase">MyGlamm</span>
+                  <span className="project-title text-blue-500 uppercase">
+                    MyGlamm
+                  </span>
 
-                  <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
+                  <h1 className="project-description mt-4 text-xl font-semibold text-gray-800 dark:text-white">
                     A clone of MyGlamm website to buy Cosmetic Products based on
                     beauty products. This Project was build by 5 members in 5
                     days .(Group)
                   </h1>
 
-                  <p class="mt-2 text-gray-500 dark:text-gray-400">
+                  <p className="project-tech-stack mt-2 text-gray-500 dark:text-gray-400">
                     <b className="text-blue-400">Tech Stack : </b>HTML | CSS |
                     JAVASCRIPT | Heroku API.
                   </p>
@@ -59,11 +53,9 @@ const ProjectContainer = () => {
                   <div class="flex items-center justify-between mt-4">
                     <a
                       onClick={() =>
-                        window.open(
-                          `https://myglammclonecw.netlify.app/`
-                        )
+                        window.open(`https://myglammclonecw.netlify.app/`)
                       }
-                      class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
+                      className="project-deployed-link text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
                     >
                       <button>
                         <img
@@ -83,7 +75,7 @@ const ProjectContainer = () => {
                         )
                       }
                       // href="https://github.com/kapil-khursade/incandescent-yarn-8212"
-                      class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
+                      className="project-github-link text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
                     >
                       <button>
                         <img
@@ -99,9 +91,9 @@ const ProjectContainer = () => {
                   </div>
                 </div>
               </div>
-              {/* //3rd */}
+              {/* //2rd */}
 
-              <div className="shadow-md shadow-[#040c16]  hover:scale-110 duration-500 p-5 rounded">
+              <div className="project-card shadow-md shadow-[#040c16]  hover:scale-110 duration-500 p-5 rounded  bg-[#0a192f]">
                 <img
                   class="object-cover object-center w-full h-64 rounded-lg lg:h-50"
                   src={Myntra}
@@ -109,15 +101,17 @@ const ProjectContainer = () => {
                 />
 
                 <div class="mt-5">
-                  <span class="text-blue-500 uppercase">MyntShop</span>
+                  <span className="project-title text-blue-500 uppercase">
+                    MyntShop
+                  </span>
 
-                  <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
+                  <h1 className="project-description mt-4 text-xl font-semibold text-gray-800 dark:text-white">
                     "MyntShop" a clone of Myntra website to buy various dressing
                     and beauty Products. This Project was build by 5 members in
                     5 days (Group)
                   </h1>
 
-                  <p class="mt-2 text-gray-500 dark:text-gray-400">
+                  <p className="project-tech-stack mt-2 text-gray-500 dark:text-gray-400">
                     <b className="text-blue-400">Tech Stack : </b>
                     React | Chakra UI | Vercel API | MaterialUI | CSS |Redux .
                   </p>
@@ -127,7 +121,7 @@ const ProjectContainer = () => {
                       onClick={() =>
                         window.open(`https://myntra-black.vercel.app/`)
                       }
-                      class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
+                      className="project-deployed-link text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
                     >
                       <button>
                         <img
@@ -146,8 +140,9 @@ const ProjectContainer = () => {
                           `https://github.com/harshau9/eager-grain-3783`
                         )
                       }
-                      class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
+                      className="project-github-link text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
                     >
+                     
                       <button>
                         <img
                           className="w-10 mx-auto"
@@ -162,7 +157,10 @@ const ProjectContainer = () => {
                   </div>
                 </div>
               </div>
-              <div className="shadow-md shadow-[#040c16]  hover:scale-110 duration-500 p-5 rounded">
+
+              {/* //3 */}
+
+              <div className="project-card shadow-md shadow-[#040c16]  hover:scale-110 duration-500 p-5 rounded  bg-[#0a192f]">
                 <img
                   class="object-cover object-center w-full h-64 rounded-lg lg:h-50"
                   src={Shephora}
@@ -170,14 +168,16 @@ const ProjectContainer = () => {
                 />
 
                 <div class="mt-5">
-                  <span class="text-blue-500 uppercase">sephora</span>
+                  <span className="project-title text-blue-500 uppercase">
+                    sephora
+                  </span>
 
-                  <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
+                  <h1 className="project-description mt-4 text-xl font-semibold text-gray-800 dark:text-white">
                     A clone of Shephora website to buy various Cosmetic Beauty
                     Products. This Project was build in 5 days(Individual)
                   </h1>
 
-                  <p class="mt-2 text-gray-500 dark:text-gray-400">
+                  <p className="project-tech-stack mt-2 text-gray-500 dark:text-gray-400">
                     <b className="text-blue-400">Tech Stack :</b> React | Chakra
                     UI | Heroku API | Reqres API.
                   </p>
@@ -187,7 +187,7 @@ const ProjectContainer = () => {
                       onClick={() =>
                         window.open(`https://offbeat-jeans-3946.vercel.app/`)
                       }
-                      class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
+                      className="project-deployed-link text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
                     >
                       <button>
                         <img
@@ -206,8 +206,9 @@ const ProjectContainer = () => {
                           `https://github.com/aloki9singh/offbeat-jeans-3946/tree/main/offbeat-jeans-3946`
                         )
                       }
-                      class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
+                      className="project-github-link text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
                     >
+                     
                       <button>
                         <img
                           className="w-10 mx-auto"
@@ -223,7 +224,9 @@ const ProjectContainer = () => {
                 </div>
               </div>
 
-              <div className="shadow-md shadow-[#040c16]  hover:scale-110 duration-500 p-5 rounded">
+              {/* //4 */}
+
+              <div className="project-card shadow-md shadow-[#040c16]  hover:scale-110 duration-500 p-5 rounded  bg-[#0a192f]">
                 <img
                   class="object-cover object-center w-full h-64 rounded-lg lg:h-50"
                   src={Portfolio}
@@ -231,15 +234,17 @@ const ProjectContainer = () => {
                 />
 
                 <div class="mt-5">
-                  <span class="text-blue-500 uppercase">Portfolio</span>
+                  <span className="project-title text-blue-500 uppercase">
+                    Portfolio
+                  </span>
 
-                  <h1 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
+                  <h1 className="project-description mt-4 text-xl font-semibold text-gray-800 dark:text-white">
                     A self representing place to know more about me , my
                     projects and respective details. This Project was build in 4
                     days(Individual)
                   </h1>
 
-                  <p class="mt-2 text-gray-500 dark:text-gray-400">
+                  <p className="project-tech-stack mt-2 text-gray-500 dark:text-gray-400">
                     <b className="text-blue-400">Tech Stack : </b>HTML | CSS |
                     JAVASCRIPT | Tailwind.
                   </p>
@@ -249,7 +254,7 @@ const ProjectContainer = () => {
                       onClick={() =>
                         window.open(`https://aloki9singh.github.io/`)
                       }
-                      class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
+                      className="project-deployed-link text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
                     >
                       <button>
                         <img
@@ -268,8 +273,9 @@ const ProjectContainer = () => {
                           "https://github.com/aloki9singh/aloki9singh.github.io/tree/master"
                         )
                       }
-                      class="text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
+                      className="project-github-link text-lg font-medium text-gray-700 dark:text-gray-300 hover:underline hover:text-gray-500"
                     >
+                     
                       <button>
                         <img
                           className="w-10 mx-auto"

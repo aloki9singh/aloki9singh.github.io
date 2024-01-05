@@ -3,7 +3,7 @@ import { Footer } from "./Footer";
 
 const Contact = () => {
   return (
-    <div>
+    <div id="contact">
       <div className=" bg-[#0a192f] ">
         <div
           name="contact"

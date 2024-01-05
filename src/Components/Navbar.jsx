@@ -23,41 +23,58 @@ export const Navbar = () => {
 
       {/* menu */}
 
-      <ul className="hidden md:flex ">
+      <ul id="nav-menu" className="hidden md:flex ">
         <li>
-          <Link to="home" smooth={true} duration={500}>
+          <Link class="nav-link home" to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
         <li>
-          <Link to="about" smooth={true} duration={500}>
+          <Link class="nav-link about" to="about" smooth={true} duration={500}>
             About Me
           </Link>
         </li>
         <li>
-          <Link to="skills" smooth={true} duration={500}>
+          <Link
+            class="nav-link skills"
+            to="skills"
+            smooth={true}
+            duration={500}
+          >
             Skills
           </Link>
         </li>
         <li>
-          <Link to="project" smooth={true} duration={500}>
+          <Link
+            class="nav-link projects"
+            to="project"
+            smooth={true}
+            duration={500}
+          >
             Projects
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} duration={500}>
+          <Link
+            class="nav-link contact"
+            to="contact"
+            smooth={true}
+            duration={500}
+          >
             Contact
           </Link>
         </li>
-        <li>
-          <a
-            className="flex justify-between items-center w-full text-gray-300  "
+        <li class="nav-link resume">
+          <Link
+            id="resume-button-1"
+          
+            className="nav-link resume flex justify-between items-center w-full text-gray-300  "
             href={Resume}
             download="Alok-Singh-Resume"
             onClick={() => window.open(Resume)}
           >
             Resume
-          </a>
+          </Link>
         </li>
       </ul>
 
@@ -136,7 +153,8 @@ export const Navbar = () => {
           </Link>
           <li className="w-[160px] h-[60px] flex justify-center items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-600 ">
             <a
-              className="flex justify-between items-center w-full text-gray-300  "
+            
+              className="nav-link resume flex justify-between items-center w-full text-gray-300  "
               href={Resume}
               download="Alok-Singh-Resume"
               onClick={() => window.open(Resume)}

@@ -16,15 +16,16 @@ const Project = () => {
           <p className="py-6"> Check out some of my recent work</p>
         </div>
         {/* Container */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div id="projects" className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {/* GridItem */}
           <div
+            class="project-card"
             style={{ backgroundImage: `url(${Shephora})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
 
-            <div >
+            <div>
               <span className="text-2xl font-bold text-gray-900 tracking-wider">
                 Shephora Clone
               </span>
@@ -42,13 +43,11 @@ const Project = () => {
               </div>
             </div>
 
-            <div>
-              
-            </div>
-
+            <div></div>
           </div>
           {/* //2 */}
           <div
+            class="project-card"
             style={{ backgroundImage: `url(${Myglamm})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
@@ -74,6 +73,7 @@ const Project = () => {
           </div>
           {/* //3 */}
           <div
+            class="project-card"
             style={{ backgroundImage: `url(${Shephora})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >

@@ -4,16 +4,20 @@ import {
   HiArrowNarrowRight,
   hitArrowNarrowRight,
 } from "react-icons/hi";
+import { Link } from "react-scroll";
 import Resume from "../Download/Alok-Singh-Resume.pdf";
 export const Home = () => {
   return (
-    <div name="home" className="bg-[#0a192f] w-full h-screen">
+    <div id="home" name="home" className="bg-[#0a192f] w-full h-screen">
       {/* 
       container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <p className="text-[#ccd6f6]">Hi, my name is</p>
-        <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
-          Alok Singh hi
+        <h1
+          id="user-detail-name"
+          className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]"
+        >
+          Alok Singh
         </h1>
         <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">
           I'm a Full Stack Web Developer.
@@ -25,7 +29,9 @@ export const Home = () => {
           enhancing the product experience.
         </p>
         <div>
-          <a
+          <Link
+            className="nav-link resume"
+            id="resume-button-2"
             href={Resume}
             download="Alok-Singh-Resume"
             onClick={() => window.open(Resume)}
@@ -37,7 +43,7 @@ export const Home = () => {
                 <HiArrowNarrowRight className="ml-3" />
               </span>
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

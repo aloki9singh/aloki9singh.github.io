@@ -18,7 +18,7 @@ function App() {
       <About2 />
       <Skills />
       <Tools />
-      {/* <Project /> */}
+
       <ProjectContainer />
       <GitStats />
       <div>
